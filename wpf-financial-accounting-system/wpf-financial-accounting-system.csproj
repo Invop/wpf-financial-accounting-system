@@ -13,11 +13,23 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Page Update="View\MainWindow.xaml">
+      <Page Update="MainWindow.xaml">
         <Generator>MSBuild:Compile</Generator>
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
+      <Page Update="MVVM\View\ChartView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="MVVM\View\CategoryView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Fonts\" />
+      <Folder Include="Images\" />
+      <Folder Include="Theme\" />
     </ItemGroup>
 
 </Project>
