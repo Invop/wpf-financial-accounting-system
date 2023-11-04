@@ -2,9 +2,9 @@
 
 namespace wpf_financial_accounting_system.MVVM.View;
 
-public partial class ChartView : Page
+public partial class Spreadsheet : UserControl
 {
-    public ChartView()
+    public Spreadsheet()
     {
         InitializeComponent();
     }

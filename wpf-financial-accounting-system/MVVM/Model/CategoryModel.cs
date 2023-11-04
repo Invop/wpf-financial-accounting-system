@@ -2,8 +2,8 @@
 
 public class CategoryModel
 {
-    private int _id;
-    private string name;
-    private string? description;
-    private decimal? budget;
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string? Description { get;set;  }
+    public decimal? Budget { get; set; }
 }

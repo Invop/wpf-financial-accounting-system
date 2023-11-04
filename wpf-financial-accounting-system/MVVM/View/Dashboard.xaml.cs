@@ -2,9 +2,9 @@
 
 namespace wpf_financial_accounting_system.MVVM.View;
 
-public partial class CategoryView : Page
+public partial class Dashboard : UserControl
 {
-    public CategoryView()
+    public Dashboard()
     {
         InitializeComponent();
     }

@@ -19,10 +19,10 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
-      <Page Update="MVVM\View\ChartView.xaml">
+      <Page Update="MVVM\View\Dashboard.xaml">
         <Generator>MSBuild:Compile</Generator>
       </Page>
-      <Page Update="MVVM\View\CategoryView.xaml">
+      <Page Update="MVVM\View\Spreadsheet.xaml">
         <Generator>MSBuild:Compile</Generator>
       </Page>
     </ItemGroup>
