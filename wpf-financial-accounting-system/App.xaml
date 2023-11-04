@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:wpf_financial_accounting_system"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"></ResourceDictionary>
+             </ResourceDictionary.MergedDictionaries>
+             
+         </ResourceDictionary>
     </Application.Resources>
 </Application>

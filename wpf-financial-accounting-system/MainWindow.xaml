@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf_financial_accounting_system"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:helpers="clr-namespace:wpf_financial_accounting_system.Helpers"
         mc:Ignorable="d"
         Height="450" Width="700" 
         WindowStyle="None" 
@@ -14,7 +16,7 @@
             CornerRadius="5">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="80"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -22,29 +24,31 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="FinWpf"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Left"
-                       Foreground="White"
-                       FontSize="22"
-                       Margin="20,0,0,0"/>
-
             <StackPanel Grid.Row="1" Grid.Column="0">
-                <RadioButton Content="Dashboard"
-                     Height="50"
-                     Foreground="White"
-                     FontSize="14"
-                     />
-                <RadioButton Content="Spreadsheet"
-                     Height="50"
-                     Foreground="White"
-                     FontSize="14"
-                     />
-                <RadioButton Content="Settings"
-                     Height="50"
-                     Foreground="White"
-                     FontSize="14"
-                     />
+                <RadioButton 
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14"
+                    Style="{StaticResource MenuButtonTheme}"
+                    IsChecked="True"
+                    helpers:FontAwesomeHelper.Icon="Home"
+                    />
+
+                <RadioButton 
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14"
+                    Style="{StaticResource MenuButtonTheme}"
+                    helpers:FontAwesomeHelper.Icon="Table"
+                    />
+                
+                <RadioButton 
+                    Height="50"
+                    Foreground="White"
+                    FontSize="14"
+                    Style="{StaticResource MenuButtonTheme}"
+                    helpers:FontAwesomeHelper.Icon="Gear"
+                    />
             </StackPanel>
         </Grid>
 
